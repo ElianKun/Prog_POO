@@ -1,3 +1,4 @@
+import entidades.Marca;
 import entidades.Producto;
 
 public class Main {
@@ -34,7 +35,26 @@ public class Main {
 
         Producto producto4 = new Producto(4, "Zanella...ZZ");
         producto4.mostrarProducto();
+
         Producto producto5 = new Producto(5, "Yamaha YY", 2500000, 6);
         producto5.mostrarProducto();
+        producto5.setNomProducto("Yamaha ZZ");
+        producto5.mostrarProducto();
+
+        //creo un objeto instancia de la marca llamando al
+        //constructor con nombre como parametro
+        Marca marca1 = new Marca("Zanella");
+        marca1.MostrarMarca();
+
+        Marca objMarca = new Marca("Honda");
+        objMarca.MostrarMarca();
+
+        objMarca.setNomMarca("Honda cambii");
+        objMarca.setId(1);
+
+        System.out.println(objMarca.toString());
+
+
+
     }//cierra MAIN
 }//cierra CLASE
